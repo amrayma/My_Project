@@ -1,0 +1,261 @@
+/* This for class */
+.my-p {
+    color: red;
+    font-size: 30px;
+}
+
+/* This for id */
+#my-p {
+    color: blue;
+    font-size: 30px;
+}
+
+h1 {
+    color: black;
+}
+
+#image {
+    background-color: blue;
+    /* Color name */
+    background-color: rgb(0, 255, 0);
+    /* Red Green Blue Alpha Channel */
+    background-color: #ff0000;
+    /* Color Hex Code  */
+    background-image: url(../image/willian-justen-de-vasconcellos-lzOzsGmAg3s-unsplash.jpg);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* background-position-x: 100px; */
+    background-size: cover;
+}
+
+
+#Padding {
+    background-color: #ddd;
+    padding: 50px;
+    /* top right bottom left */
+    /* 10   10    10     10 */
+
+    /* padding: 10px 20px; */
+    /* top right bottom left */
+    /* 10   20    10     20 */
+
+    /* padding: 10px 20px 15px; */
+    /* top right bottom left */
+    /* 10   20    15     10 */
+
+    /* padding: 0 0 10px; */
+    /* padding-bottom: 10px; */
+    /* padding-right: 10px; */
+}
+
+#Margin {
+    background-color: #ddd;
+
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    margin-left: 15%;
+
+    /* width: 70%; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+
+    /* width: 70%; */
+    /* margin: auto; */
+}
+
+#Border {
+    border-width: 10px;
+    border-color: red;
+    border-style: solid;
+    /* border: 10px solid blue; */
+    /* outline: 10px solid blue; */
+}
+
+
+/*
+Block
+
+    - Take full width if No width
+    - Add line break
+    - Respect padding, margin, width, hight
+
+div {
+    background-color: red;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+}
+*/
+
+
+/*
+Inline
+    - Do not add line break
+    - Do not respect width, height
+    - Respect padding, margin just (left, right)
+span {
+    background-color: green;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    width: 300px;
+    height: 30px;
+}
+*/
+
+
+/*
+Inline-Block
+    - Allow elements before and after it
+    - Respect padding, margin, width, hight
+    -
+
+#In-block {
+    background-color: blue;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+
+    width: 300px;
+    height: 30px;
+}
+*/
+
+/* ***************** Element visibility ***************** */
+#Div {
+    background-color: red;
+    margin: 10px 0;
+    /* display: none; */
+    visibility: visible;
+}
+
+.first {
+    visibility: hidden;
+}
+
+
+/* *********************** Grouping Multiple Selectors ****************** */
+
+.one {
+    border-bottom: 2px solid red;
+    color: red;
+}
+
+.two {
+    border-bottom: 2px solid green;
+    color: green;
+}
+
+.three {
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+
+.four {
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+.one,
+.two,
+.three,
+.four {
+    padding: 15px;
+    margin: 12px 0;
+    background-color: #ededed;
+}
+
+/* *************************** Nesting *********************** */
+
+
+div .special {
+    color: red;
+}
+
+/* *********************** Width $ Height ***************** */
+
+#width {
+    background-color: aquamarine;
+    padding: 10px;
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 10px;
+    max-height: 10px;
+    /* width: fit-content; */
+}
+
+/* ************************ Overflow *********************** */
+
+#overflow {
+    width: 150px;
+    height: 150px;
+    background-color: #eee;
+    margin: 20px auto;
+    border-radius: 6px;
+    overflow: auto;
+    /* overflow: scroll; */
+    /* overflow-x: hidden; */
+}
+
+/* ******************** shadow ********************* */
+#shadow {
+    background-color: #f9f9f9;
+    /* color: black; */
+    text-shadow: 0 0 0 red;
+}
+
+/* ******************* text-alignment *********************** */
+#alignment {
+    background-color: #f9f9f9;
+    text-align: center;
+    direction: rtl;
+}
+
+/* *********************** text-decration ************************* */
+#decoration {
+    background-color: antiquewhite;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/* *********************** text-spacing *********************** */
+#spacing {
+    background-color: #f9f9f9;
+    letter-spacing: 2px;
+    text-indent: 100px;
+    line-height: 50px;
+    width: 300px;
+    word-break: break-word;
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+}
+
+#inheritance {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+#inheritance h3 {
+    border: 2px solid;
+    border-color: inherit;
+    padding: inherit;
+}
+
+
+.with-ser{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.san-ser{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.with-ser .san-ser{
+    background-color: #ddd;
+    padding: 10px;
+}
