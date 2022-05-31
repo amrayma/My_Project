@@ -92,8 +92,7 @@ div {
 
 /*
 Inline
-    - Do not add line break
-    - Do not respect width, height
+
     - Respect padding, margin just (left, right)
 span {
     background-color: green;
